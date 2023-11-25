@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+</head>
+<body>
+    <div id="add" >
+        <input type="text" placeholder="Name" v-model ="name" v-on:input="checkName"> <div class="nameError" >this name is null</div>
+        <input type="text" name="" id="" placeholder="Email" v-model = "email" v-on:input = "checkEmail" > <div class="emailError" >this email is not actual </div>
+        <input type="password" name="" id="" placeholder="Password" v-model ="password" v-on:input="checkPassword"> <div class="passError" ></div>
+       <button v-on:click = "conf">confirm</button>
+    </div>
+
+
+    <script src="/js/ex4.js"></script>
+
+</body>
+</html>

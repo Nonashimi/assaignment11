@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body>
+    
+
+    <div id="app">
+        <button v-on:click = "notComplete" class = "button inclk" >Not Completed</button> <button v-on:click="Complete" class = "button">Complete</button> <div class=""> 
+         </div> 
+        <input type="text" v-model ="newTodo">
+        <button v-on:click ="clkAdd">add </button>
+        <ul>
+            <li v-for ="title in titles" v-show = "title.isComplete" ><div class="title" >{{title.title}}</div>  <div class="completed"><input type="checkbox" v-on:click="isCheck" name="" id=""></div></li>
+        </ul>
+    </div>
+
+<style>
+    .inclk{
+        color: #fff;
+        background-color: rgb(50, 48, 48);
+       
+    
+        
+    }
+    .button {
+        padding: 10px 5px;
+        border: none;
+        margin: 0 10px 10px 0;
+        border-radius: 3px;
+        transition: all .5s;
+    }
+</style>
+
+    <script src="/js/ex5.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body>
+
+
+    <div id="app">
+     <input type="text"  class = "inputAdd" v-on:input = "input($event.target.value)">
+     <button v-on:click="addNewWord">add</button>
+        <ul class = "ul">
+            <li v-for="tit in title"><div class="">{{tit}}</div>
+                <button v-on:click="removeClk">remove</button>
+            </li>
+        </ul>
+    </div>
+
+<script src="/js/ex2.js"></script>
+
+
+</body>
+</html>
